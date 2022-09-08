@@ -12,7 +12,8 @@
     <p>After importing the map as a vector layer in QGIS, I was then able to display the map with different projections by navigating to the project properties. In that tab I then chose what coordinate reference system I wanted to use to display the map and then applied it to the vector. This then manipulated the map in a multitude of ways as the different projections appear differenly depending on what aspect of the globe they compromise to make the map into a 2-dimensional object.</p>
     
     <h2>WGS84 Projection</h2>
-    <h3>Some observations</h3>
+    <h3>For this projection, the latitude and longitude lines are equally spaced and equally straight. While the shape and area are maintained relatively well in the center of the map, as the distance from the middle of the projection increases, so does the distortion of the area and somewhat shape. This is reflected by the circles gradually changing their shape into ellipses and becoming larger at the top and bottom of the map.
+    </h3>
     <a href=".//maps/4326.png">
     <img src=".//maps/4326.png" alt="WGS84" width='500px'>
     </a>
@@ -22,32 +23,35 @@
     <img src=".//maps/54043.png" alt="Aitoff" width='500px'>
     </a>
     <h2>Pseudo Mercator Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The longitude and latitude lines for this projection are both straight, but while the longitude lines are equally spaced, the latitude lines become more spaced out the further from the equator. This projection aims to preserve angles as it is used for primarily navigation. This means that the area becomes slightly distorted; this is best seen when examining the size of Greenland.
+    </h3>
     <a href=".//maps/3857.png">
     <img src=".//maps/3857.png" alt="Pseudo Mercator" width='500px'>
     </a>
     <h2>Sphere Winkel I Projection</h2>
-    <h3>Some observations</h3>
+    <h3>The latitude lines for this projection are straight, while the longitude lines become more curved as they progress from the Prime Meridian. The Winkel focuses on maintain the scale of the projection so there are many distortions as evidenced by the distortion of the circles.</h3>
     <a href=".//maps/53018.png">
     <img src=".//maps/53018.png" alt="Sphere Winkel I" width='500px'>
     </a>
     <h2>World Cylindrical Equal Area Projection</h2>
-    <h3>Some observations</h3>
+    <h3>For this projection, both the longitude and latitude lines are straight. The circles maintain their shape relatively well in the vertical center of the map, but become slightly distorted when they get closer to the top or bottom of the map. As the name suggests, this is because the area is maintained at the expense of other distortions.</h3>
     <a href=".//maps/54034.png">
     <img src=".//maps/54034.png" alt="World Cylindrical Equal Area" width='500px'>
     </a>
     <h2>World Equidistant Conic Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection aims to preserve distance. The meridians are all the same length and have not been distorted in any way. Distortion of shape and area increases when distance from the poles increases. This is reflected in how the circles gradually become more and more stretched into ellipses as they are removed from the origin.
+    </h3>
     <a href=".//maps/54027.png">
     <img src=".//maps/54027.png" alt="World Equidistant Conic" width='500px'>
     </a>
     <h2>North Pole Azimuthal Equidistant Projection</h2>
-    <h3>Some observations</h3>
+    <h3>Because the meridians are preserved as straight lines from the north pole, the angles of the globe are maintained for this projection. The circles become highly distorted as they become further and further from the North Pole, which highlights the distortion of shape, scale, and area as distance from the pole increases. Distance on this projection is also preserved.</h3>
     <a href=".//maps/102016.png">
     <img src=".//maps/102016.png" alt="North Pole Azimuthal Equidistant" width='500px'>
     </a>
     <h2>Peirce Quincuncial North Pole Diamond Projection</h2>
-    <h3>Some observations</h3>
+    <h3>This projection is displayed in the shape of a diamond, and is excellent at preserving shapes and angles. This is reflected by the way the circles may vary in size but they all maintain their circle shape. This preservation however comes at the cost of direction and area on some levels. Area becomes more distorted as the distance from the center of the square increases.
+    </h3>
     <a href=".//maps/54091.png">
     <img src=".//maps/54091.png" alt="Peirce Quincuncial North Pole Diamond" width='510px'>
     </a>
